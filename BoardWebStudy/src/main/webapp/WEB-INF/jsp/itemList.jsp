@@ -8,11 +8,10 @@
 
 </head>
 <body></body>
-    <h3>아이템목록(itemList.jsp)</h3>
     
-    <div class="center">
+    <div class="container">
+    <h3>아이템목록(itemList.jsp)</h3>
     	<form action="boardList.do">
-
     		<div class="row">
     			<div class="col-sm-4"><!-- select 목록. -->
     				<select name="searchCondition" class="form-control">
@@ -22,15 +21,12 @@
     					<option value="TW" ${searchCondition eq 'TW' ? 'selected' : '' }>제목 & 작성자</option>
     				</select>
     			</div>
-    		
-    		<div class="col-sm-6">
-    			<input type="text" name="keyword" value="${keyword }" class="form-control">    			
-    		</div>
-    		
-    		<div class="col-sm-2">
-    			<input type="submit" value="조회" class="btn btn-primary">
-    		</div>
-    		
+	    		<div class="col-sm-7">
+	    			<input type="text" name="keyword" value="${keyword }" class="form-control">    			
+	    		</div>
+	    		<div class="col-sm-1 text-end" >
+	    			<input type="submit" value="조회" class="btn btn-primary">
+	    		</div>
     		</div>
     	</form>
     </div>
