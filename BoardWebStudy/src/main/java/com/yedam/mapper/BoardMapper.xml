@@ -45,9 +45,9 @@
                                from tbl_board
                                <include refid="selectCondition"></include>
                                order by board_no desc) a ) b
-            where b.rn > (#{page} - 1) * 5
+            where b.rn > (#{page} - 1) * 9
             <![CDATA[
-            and   b.rn <= (#{page} * 5)
+            and   b.rn <= (#{page} * 9)
             ]]>
   </select>
 
