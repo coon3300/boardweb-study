@@ -53,17 +53,19 @@
 										</a>
   									<text x="50%" y="50%" fill="#eceeef" text-anchor="middle" alignment-baseline="middle" dy=".3em">재고 없음</text>
   								</svg>
-			           	<div class="card-body">
+			           	<div class="card-body ">
 					  				<a href="board.do?page=${paging.page}&bno=${board.boardNo }" class="text-decoration-none" style="color: black;">
-				              <p class="card-text">${board.title }</p>
+				              <span class="card-text ps-3"">${board.title }</span>
 			              </a>
+			           	<div class="card-body ">
 			              <div class="d-flex justify-content-between align-items-center">
-			                <div class="btn-group">
+			                <div class="btn-group ">
 			                  <button type="button" class="btn btn-sm btn-outline-secondary">장바구니</button>
 			                  <button type="button" class="btn btn-sm btn-outline-secondary">구매하기</button>
 			                </div>
 			                <small class="text-body-secondary">${board.writer }</small>
 			              </div>
+			            </div>
 			            </div>
 			          </div>
 			        </div>
